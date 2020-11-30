@@ -2,6 +2,6 @@
 
 ## Equipo
 
-Fernando de Row
-Sebastián Gómez
-Martin Gabotto
+- Fernando de Row
+- Sebastián Gómez
+- Martin Gabotto

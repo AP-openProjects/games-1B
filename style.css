@@ -42,3 +42,10 @@ footer {
   flex-direction: column;
   justify-content: space-between;
 }
+
+/* ICON */
+
+.icon {
+  margin-left: 0;
+  margin-right: 100px;
+}

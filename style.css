@@ -1,3 +1,4 @@
+
 /* Configuracion general + variables */
 
 :root{
@@ -175,3 +176,52 @@ html{
     line-height: 1.4;
     padding-bottom: 10px;
   }
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  /* We want the header to have a static height, 
+   it will always take up just as much space as it needs.  */
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 0 0 auto;
+}
+
+.main-content {
+  /* By setting flex-grow to 1, the main content will take up 
+   all of the remaining space on the page. 
+   The other elements have flex-grow: 0 and won't contest the free space. */
+  /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 1 0 auto;
+}
+
+footer {
+  /* Like the header, the footer will have a static height - it shouldn't grow or shrink.  */
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 0 0 auto;
+  color: white;
+}
+
+/*Make footer push to bottom when content is short or missing*/
+
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ICON */
+
+.icon {
+  margin-left: 0;
+  margin-right: 100px;
+}

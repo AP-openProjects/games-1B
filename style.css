@@ -17,6 +17,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -27,10 +28,56 @@ html {
 
 body {
   height: 100%;
-  background-color: linear-gradient(#8b7d7d 10%, #84ca13 150%);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  /* We want the header to have a static height, 
+   it will always take up just as much space as it needs.  */
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 0 0 auto;
+}
+
+
+
+
+
+.subtitle {
+
+}
+
+/*********** HEAD + TITLE *******************/
+
+.title {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+
+}
+
+/* ICON */
+
+.icon {
+  margin-left: 0;
+  margin-right: 100px;
 }
 
 /*********** CARDS *******************/
+
+.main-content {
+  /* By setting flex-grow to 1, the main content will take up 
+   all of the remaining space on the page. 
+   The other elements have flex-grow: 0 and won't contest the free space. */
+  /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 1 0 auto;
+}
 
 /* Background + Posicion */
 .card-section {
@@ -165,29 +212,15 @@ body {
   padding-bottom: 10px;
 }
 
-* {
-  font-family: "Poppins", sans-serif;
-}
 
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
+/*********** DESCRIPTION + FOOTER *******************/
 
-header {
-  /* We want the header to have a static height, 
-   it will always take up just as much space as it needs.  */
-  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
-  flex: 0 0 auto;
-}
 
-.main-content {
-  /* By setting flex-grow to 1, the main content will take up 
-   all of the remaining space on the page. 
-   The other elements have flex-grow: 0 and won't contest the free space. */
-  /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
-  flex: 1 0 auto;
+.description-project {
+  height: 25vh;
+  /* background: hotpink; */
+  padding: 30px;
+  margin: 30px;
 }
 
 footer {
@@ -206,9 +239,4 @@ footer {
   justify-content: space-between;
 }
 
-/* ICON */
 
-.icon {
-  margin-left: 0;
-  margin-right: 100px;
-}

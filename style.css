@@ -247,4 +247,18 @@ footer {
   justify-content: space-between;
 }
 
+/*Quitar subrayado y color de link*/
 
+a {
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+}
+
+/*Dimensiones imagen*/
+
+.img_form {
+  width: 400px;
+  height: 250px;
+
+}

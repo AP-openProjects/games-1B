@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    height: 0;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.842)
+
+}
+
+
+h1 {
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    height: 5rem;
+    font-size: 4em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+
+/***** IMAGEN + PUNTUACION JUEGO ******/
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* IMAGEN */
+
+.game img {
+    height: 400px;
+    margin: 10px;
+    border: black solid 2px;
+    
+}
+
+/* PUNTUACION */
+
+.puntuacion {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-transform: uppercase;
+
+
+}
+
+.puntuacion h3 {
+    font-size: 2.3em;
+}
+
+.puntuacionTipo {
+    display: flex;
+    align-content: center;
+    margin: 30px;
+}
+
+.tipo {
+    font-size: 1.4em;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    /* justify-content: right; */
+}
+
+.bar {
+    height: 30px;
+    width: 300px;
+    background-color: blueviolet;
+    border-radius: 30px;
+    border: black solid 2px;
+}
+
+.grafico {
+    background-color: brown;
+}
+
+.sonido {
+    background-color: burlywood;
+}
+
+.historia {
+    background: red;
+}
+
+.jugabilidad {
+    background-color: blue;
+}
+
+/***** SINOPSIS  + TRAILER******/
+
+.sinopsis {
+    padding: 45px;
+}
+
+.sinopsis h3 {
+    text-transform: uppercase;
+}
+
+.trailer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.trailer h3 {
+    font-size: 2em;
+    text-transform: uppercase;
+    
+}

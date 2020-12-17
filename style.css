@@ -58,8 +58,9 @@ header {
   flex-direction: column;
 }
 
-h1 {
-
+.banner {
+  width: auto;
+  height: auto;
 }
 
 /* ICON */

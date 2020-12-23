@@ -11,8 +11,10 @@
   <meta name="author" content="Eugenio, Fernando, Martín, Sebastián">
   <meta name="robots" content="index,follow">
   <!-- Título de la página web <title>xxxxxxxxxx</title>--->
+  <title>Games-1b</title>
   <!-- Hoja de estilo CSS <link rel="stylesheet" type="text/css" href="xxxxxxxxxxxxxxxxxx">-->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles2.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
   <!-- CSS -->
@@ -29,55 +31,48 @@
 
   <!-- FontAwesome-->
   <script src="https://kit.fontawesome.com/afdaddf486.js" crossorigin="anonymous"></script>
+
+  <!-- More fonts, se puede cambiar-->
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
 </head>
 
 <!--Cuerpo del documento-->
 
-<body>
+<body
+  style="background-image: url(img/bg-image.jpg);  background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
 
   <!--Menú de navegación y logo de la compañia-->
   <header>
-    <!-- <img src="insertar logo">-->
-    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <div class="icon">
-          <img src="./img/control-de-juego-con-joystick.png" width="100px" height="auto" alt="">
-        </div>
-        <a class="navbar-brand" href="#">Games-1b <i class="fas fa-gamepad"></i></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="main_nav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="#inicio" title="Link hacia el inicio de la web">Inicio</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#destacados"
-                title="Juegos destacados de la semana">Destacados de la
-                semana</a></li>
-            <li class="nav-item"><a class="nav-link" href="#descripproyect" title="Descripción del proyecto">Descripción
-                del proyecto</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#contacto"
-                title="Datos de contacto de los integrantes del proyecto">Datos de
-                contacto</a>
-            </li>
 
-          </ul>
-        </div> <!-- navbar-collapse.// -->
-      </div> <!-- container.// -->
+    <!--/*probar nueva hamburguesa**/-->
+
+    <img src="img/control-de-juego-con-joystick.png" alt="joystick logo" class="logo">
+
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#Inicio" class="nav__link">Inicio</a></li>
+        <li class="nav__item"><a href="#Destacados" class="nav__link">Destacados</a></li>
+        <li class="nav__item"><a href="#about_us" class="nav__link">About us</a></li>
+
+      </ul>
     </nav>
+    <!--fin nueva ham-->
   </header>
   <main>
     <!--Agregar estilo CSS y centrar-->
-    <a href="benner">
-      <img src="img/Banner.jpg">
-    </a>
+    <img src="img/Banner.jpg" alt="rapture" class="responsive" id="Inicio">
 
     <div class="container">
-      <section class="card-section">
+      <section class="card-section" id="Destacados">
         <div class="card-grid">
-          <a class="card" href="#">
+          <a class="card" href="The_WitcherIII.html">
             <div class="card__background" style="background-image: url(https://images2.alphacoders.com/600/600255.jpg)">
             </div>
             <div class="box_score">
@@ -85,138 +80,167 @@
             </div>
             <div class="card__content">
               <h3 class="card__heading">The Witcher 3</h3>
-              <p class="card__category">Category</p>
+              <p class="card__category">Aventura</p>
+              <p class="card__category">RPG</p>
             </div>
           </a>
-          <a class="card" href="#">
-            <div class="card__background" style="background-image: url(https://images.alphacoders.com/102/1021182.jpg)">
+          <a class="card" href="TLOUII.html">
+            <div class="card__background" style="background-image: url(img/portada-The\ last\ of\ us\ II.jpg)">
             </div>
             <div class="box_score">
-              <div class="score">80</div>
+              <div class="score">93</div>
             </div>
             <div class="card__content">
-              <h3 class="card__heading">Example Card Heading</h3>
-              <p class="card__category">Category</p>
+              <h3 class="card__heading">The Last of Us Part II</h3>
+              <p class="card__category">Aventura</p>
+              <p class="card__category">Shooter</p>
             </div>
           </a>
-          <a class="card" href="#">
-            <div class="card__background" style="background-image: url(https://images2.alphacoders.com/600/600255.jpg)">
+          <a class="card" href="Rocket_league.html">
+            <div class="card__background" style="background-image: url(img/portada-Rocket_league.jpg)">
             </div>
             <div class="box_score">
-              <div class="score">95</div>
+              <div class="score">84</div>
             </div>
             <div class="card__content">
-              <h3 class="card__heading">The Witcher 3</h3>
-              <p class="card__category">Category</p>
+              <h3 class="card__heading">Rocketleague</h3>
+              <p class="card__category">Indie</p>
+              <p class="card__category">Racing</p>
+              <p class="card__category">Sport</p>
             </div>
           </a>
-          <a class="card" href="#">
-            <div class="card__background" style="background-image: url(https://images.alphacoders.com/102/1021182.jpg)">
+          <a class="card" href="HZD.html">
+            <div class="card__background" style="background-image: url(img/portada-Horizon-Zero-Dawn.jpg)">
             </div>
             <div class="box_score">
-              <div class="score">80</div>
+              <div class="score">91</div>
             </div>
             <div class="card__content">
-              <h3 class="card__heading">Example Card Heading</h3>
-              <p class="card__category">Category</p>
+              <h3 class="card__heading">Horizon Zero Dawn</h3>
+              <p class="card__category">RPG</p>
+              <p class="card__category">Shooter</p>
             </div>
           </a>
-          <a class="card" href="#">
-            <div class="card__background" style="background-image: url(https://images2.alphacoders.com/600/600255.jpg)">
-            </div>
-            <div class="box_score">
-              <div class="score">95</div>
-            </div>
-            <div class="card__content">
-              <h3 class="card__heading">The Witcher 3</h3>
-              <p class="card__category">Category</p>
-            </div>
-          </a>
-          <a class="card" href="#">
-            <div class="card__background" style="background-image: url(https://images.alphacoders.com/102/1021182.jpg)">
-            </div>
-            <div class="box_score">
-              <div class="score">80</div>
-            </div>
-            <div class="card__content">
-              <h3 class="card__heading">Example Card Heading</h3>
-              <p class="card__category">Category</p>
-            </div>
-          </a>
-          <a class="card" href="#">
-            <div class="card__background" style="background-image: url(https://images2.alphacoders.com/600/600255.jpg)">
+          <a class="card" href="GOW.html">
+            <div class="card__background" style="background-image: url(img/portada-God-Of-War.jpg)">
             </div>
             <div class="box_score">
               <div class="score">95</div>
             </div>
             <div class="card__content">
-              <h3 class="card__heading">The Witcher 3</h3>
-              <p class="card__category">Category</p>
+              <h3 class="card__heading">God Of War</h3>
+              <p class="card__category">Aventura</p>
+              <p class="card__category">Beat'em up</p>
             </div>
           </a>
-          <a class="card" href="#">
-            <div class="card__background" style="background-image: url(https://images.alphacoders.com/102/1021182.jpg)">
+          <a class="card" href="GOT.html">
+            <div class="card__background" style="background-image: url(img/portada-Ghost-of-Tsushima.png)">
+            </div>
+            <div class="box_score">
+              <div class="score">90</div>
+            </div>
+            <div class="card__content">
+              <h3 class="card__heading">Ghost of Tsushima</h3>
+              <p class="card__category">Aventura</p>
+            </div>
+          </a>
+          <a class="card" href="Fifa21.html">
+            <div class="card__background" style="background-image: url(img/portada-FIFA-21.png)">
+            </div>
+            <div class="box_score">
+              <div class="score">60</div>
+            </div>
+            <div class="card__content">
+              <h3 class="card__heading">FIFA 21</h3>
+              <p class="card__category">Sport</p>
+            </div>
+          </a>
+          <a class="card" href="COD.html">
+            <div class="card__background" style="background-image: url(img/portada-Call-of-Duty-Modern-Warfare.png)">
             </div>
             <div class="box_score">
               <div class="score">80</div>
             </div>
             <div class="card__content">
-              <h3 class="card__heading">Example Card Heading</h3>
-              <p class="card__category">Category</p>
+              <h3 class="card__heading">Call of Duty Modern Warfare</h3>
+              <p class="card__category">Shooter</p>
             </div>
           </a>
 
           <div>
           </div>
       </section>
-      <div class="container">
-        <div class="description-project">
-          <h4 id="descripproyect">Descripción del proyecto</h4>
-          <p>
-            Proyecto de diseño web en donde se busca a través de la practica incorporar conceptos de las tecnologías
-            HTML, CSS y JavaScript.
-          </p>
-  
-          <p>
-            A su vez, el proyecto presenta el desafío de trabajar en equipo utilizando distintas herramientas (Git,
-            Github, Clickup, Figma, etc) que permitan emular un entorno de trabajo profesional el cual servirá a cada
-            uno de los integrantes adquirir experiencia.
-          </p>
-  
-          <p>
-            Aprovechamos el espacio para agradecer al equipo de <a href="https://aprendeaprogramar.dev/" target="_blank"
-              title="Link hacia la web de Aprende a Programar">Aprende a
-              Programar</a>, su <a href="https://discord.com/channels/758397020477587466/778729790055120937"
-              target="_blank">comunidad</a> y a
-            todos los tutores y compañeros que hicieron esto posible!
-          </p>
 
-          <p>Una más y no jodo más con Github</p>
+      <section class="my-services" id="about_us">
+        <!-- <div class="container my-services"> -->
+        <!-- <div class="description-project"> -->
+        <h2 class="section__title section__title--services" id="descripproyect">Descripción del proyecto</h2>
+        <!-- <h4 id="descripproyect">Descripción del proyecto</h4> -->
+        <div class="services">
+          <div class="service">
+            <h4>
+              ✪ Proyecto de diseño web en donde se busca a través de la práctica incorporar conceptos de las
+              tecnologías:
+              <br>
+              <br>
+              <ul class="lista-sin-puntos social-list ulinlineblock">
+                <li class="social-list__item"><i class="fab fa-js"></i> Javascript</li>
+                <li class="social-list__item"><i class="fab fa-html5"></i> HMTL5</li>
+                <li class="social-list__item"><i class="fab fa-css3-alt"></i> CSS3</li>
+              </ul>
+            </h4>
+            <br>
+            <br>
+            <p>
+              A su vez, el proyecto presenta el desafío de trabajar en equipo utilizando distintas herramientas (Git,
+              Github, Clickup, Figma, etc) que permitan emular un entorno de trabajo profesional el cual servirá a cada
+              uno de los integrantes adquirir experiencia.
+            </p>
+            <br>
+            <br>
+            <p>
+              Aprovechamos el espacio para agradecer al equipo de <a href="https://aprendeaprogramar.dev/"
+                target="_blank" title="Link hacia la web de Aprende a Programar">Aprende a
+                Programar</a>, su <a href="https://discord.com/channels/758397020477587466/778729790055120937"
+                target="_blank">comunidad</a> y a
+              todos los tutores y compañeros que hicieron esto posible!
+            </p>
 
+            <p>Una más y no jodo más con Github</p>
+
+            <!-- </div>
+        </div> -->
+          </div>
         </div>
-      </div>
+      </section>
   </main>
 
   <!--Pie del documento-->
 
-  <footer class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <address>
-        <h4 id="contacto">Team Games-1b - integrantes</h4>
+  <footer class="footer">
+
+    <address>
+      <h2 id="contacto">Team Games-1b - integrantes</h2>
+      <br>
+      <h4>
         <ul>
           <li>Rodrigo <a title="Github" href="https://https://github.com/RodrigoAntunez" target="_blank"><i
-            class="fab fa-github"></i></a> <a title="Linkedin" href="https://www.linkedin.com/in/rodrigoantunez1999/"
-" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                class="fab fa-github"></i></a> <a title="Linkedin"
+              href="https://www.linkedin.com/in/rodrigoantunez1999/" " target=" _blank"><i
+                class="fab fa-linkedin-in"></i></a></li>
+          <br>
           <!--agregar logo de github + linkedin C/enlaces-->
           <li>Fernando <a title="Github" href="https://github.com/FerDR89" target="_blank"><i
                 class="fab fa-github"></i></a> <a title="Linkedin" href="https://www.linkedin.com/in/fernando-emmanuel-de-row-396482b0/
 " target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+          <br>
           <!--agregar logo de github + linkedin C/enlaces-->
           <li>Martín <a title="Github" href="https://github.com/mgabotto" target="_blank"><i
                 class="fab fa-github"></i></a> <a title="Linkedin"
               href="https://www.linkedin.com/in/martin-luis-gabotto-0916a3146/" target="_blank"><i
                 class="fab fa-linkedin-in"></i></a>
           </li>
+          <br>
           <!--agregar logo de github + linkedin C/enlaces-->
           <li>Sebastián <a title="Github" href="https://github.com/Tusuegra510" target="_blank"><i
                 class="fab fa-github"></i></a> <a title="Linkedin"
@@ -224,8 +248,9 @@
                 class="fab fa-linkedin-in"></i></a></li>
           <!--agregar logo de github + linkedin + Email C/enlaces-->
         </ul>
-      </address>
-    </div>
+      </h4>
+    </address>
+
   </footer>
 
   <!--JS-->

@@ -2,86 +2,171 @@
 <html lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initialscale=1.0">
-    <meta name="keywords" content="Call of Duty Modern Warfare, videogame, videojuego, shooter, disparos, COD">
-    <meta name="description" content="Valorización / calificación de Call of Duty Modern Warfare">
-    <meta name="author" content="Fernando, Martín, Sebastián">
-    <meta name="robots" content="index, follow">
-    <link rel="stylesheet" type="text/css" href="styleGames.css">
-    <title>Call of Duty Modern Warfare</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initialscale=1.0">
+  <meta name="keywords" content="TLOU2,TLOUII, zombies, videogame, videojuego">
+  <meta name="description" content="Valorización / calificación de The last of us II">
+  <meta name="author" content="Fernando, Martín, Sebastián">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" type="text/css" href="styleGames.css">
+
+  <!-- a ver-->
+  <!-- Título de la página web <title>xxxxxxxxxx</title>--->
+  <!-- Hoja de estilo CSS <link rel="stylesheet" type="text/css" href="xxxxxxxxxxxxxxxxxx">-->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles2.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <!-- jQuery and JS bundle w/ Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+  <!-- FontAwesome-->
+  <script src="https://kit.fontawesome.com/afdaddf486.js" crossorigin="anonymous"></script>
+
+  <!-- More fonts, se puede cambiar-->
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+  <title>Call of Duty: Modern Warfare</title>
 </head>
 
 <body>
-    <header>
+  <header>
 
-    </header>
-    <main>
-        <h1>Call of Duty Modern Warfare</h1>
-        <section class="game">
+    <!--/*probar nueva hamburguesa**/-->
 
-            <img src="img/COD.jpg" alt="Imagen del juego: Call of Duty Modern Warfare"
-                title="Imagen Call of Duty Modern Warfare">
-            <div class="puntuacion">
-                <h3>Puntuación</h3>
-                <ul type="none">
-                    <div class="puntuacionTipo"></div>
-                    <div class="tipo">
-                        <li>Gráficos</li>
-                    </div>
-                    <div class="bar grafico"></div>
+    <img src="img/control-de-juego-con-joystick.png" alt="joystick logo" class="logo">
 
-                    <div class="puntuacionTipo"></div>
-                    <div class="tipo">
-                        <li>Sonido</li>
-                    </div>
-                    <div class="bar sonido"></div>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav__list">
 
-                    <div class="puntuacionTipo"></div>
-                    <div class="tipo">
-                        <li>Historia</li>
-                    </div>
-                    <div class="bar historia"></div>
+        <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
+        <li class="nav__item"><a href="index.html#Destacados" class="nav__link">Destacados</a></li>
+        <li class="nav__item"><a href="index.html#about_us" class="nav__link">About us</a></li>
 
-                    <div class="puntuacionTipo"></div>
-                    <div class="tipo">
-                        <li>Jugabilidad</li>
-                    </div>
-                    <div class="bar jugabilidad"></div>
-                </ul>
-        </section>
+      </ul>
+    </nav>
+    <!--fin nueva ham-->
+  </header>
+  <main>
+    <h1>Call of Duty Modern Warfare</h1>
+    <section class="game">
 
-        <div class="sinopsis">
+      <img src="img/COD.jpg" alt="Imagen del juego: Call of Duty Modern Warfare"
+        title="Imagen Call of Duty Modern Warfare">
+      <div class="puntuacion">
+        <h3>Puntuación</h3>
+        <ul type="none">
+          <div class="puntuacionTipo"></div>
+          <div class="tipo">
+            <li>Gráficos</li>
+          </div>
+          <div class="bar grafico"></div>
 
-            <h3>Sinopsis</h3>
+          <div class="puntuacionTipo"></div>
+          <div class="tipo">
+            <li>Sonido</li>
+          </div>
+          <div class="bar sonido"></div>
 
-            <p>Call of Duty: Modern Warfare es un videojuego de disparos en primera persona desarrollado por Infinity
-                Ward y
-                publicado por Activision. Es el decimosexto juego de la saga Call of Duty y es un reboot de la serie
-                Modern
-                Warfare. Fue lanzado el 25 de octubre de 2019.</p>
+          <div class="puntuacionTipo"></div>
+          <div class="tipo">
+            <li>Historia</li>
+          </div>
+          <div class="bar historia"></div>
 
-            <p>El juego se ambienta en un entorno realista y moderno. Por primera vez en la historia de la franquicia,
-                Call
-                of Duty: Modern Warfare fue compatible con el modo multijugador multiplataforma. Activision también ha
-                confirmado que el pase de temporada tradicional de la franquicia ha sido desechado, lo que permite a la
-                compañía distribuir contenido gratuito después del lanzamiento a todos los jugadores. Además de otros
-                cosméticos y mapas jugables de manera gratuita.4 El juego también es el primero en la serie, desde el
-                Call
-                of Duty: Ghosts de 2013, que no presenta un modo zombies
-                <a href="https://es.wikipedia.org/wiki/Call_of_Duty:_Modern_Warfare_(videojuego_de_2019)"
-                    title="Link a Wikipedia: Call of Duty: Modern Warfare" target="_blank">(Leer más)</a>
-            </p>
-        </div>
-        <div class="trailer">
+          <div class="puntuacionTipo"></div>
+          <div class="tipo">
+            <li>Jugabilidad</li>
+          </div>
+          <div class="bar jugabilidad"></div>
+        </ul>
+    </section>
 
-            <h3>Tráiler</h3>
+    <div class="sinopsis">
 
-            <iframe src="https://www.youtube.com/embed/bH1lHCirCGI"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
-    </main>
+      <h3>Sinopsis</h3>
+
+      <p>Call of Duty: Modern Warfare es un videojuego de disparos en primera persona desarrollado por Infinity
+        Ward y
+        publicado por Activision. Es el decimosexto juego de la saga Call of Duty y es un reboot de la serie
+        Modern
+        Warfare. Fue lanzado el 25 de octubre de 2019.</p>
+
+      <p>El juego se ambienta en un entorno realista y moderno. Por primera vez en la historia de la franquicia,
+        Call
+        of Duty: Modern Warfare fue compatible con el modo multijugador multiplataforma. Activision también ha
+        confirmado que el pase de temporada tradicional de la franquicia ha sido desechado, lo que permite a la
+        compañía distribuir contenido gratuito después del lanzamiento a todos los jugadores. Además de otros
+        cosméticos y mapas jugables de manera gratuita.4 El juego también es el primero en la serie, desde el
+        Call
+        of Duty: Ghosts de 2013, que no presenta un modo zombies
+        <a href="https://es.wikipedia.org/wiki/Call_of_Duty:_Modern_Warfare_(videojuego_de_2019)"
+          title="Link a Wikipedia: Call of Duty: Modern Warfare" target="_blank">(Leer más)</a>
+      </p>
+    </div>
+    <div class="trailer">
+
+      <h3>Tráiler</h3>
+
+      <iframe src="https://www.youtube.com/embed/bH1lHCirCGI"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </main>
+
+  <footer class="footer">
+
+    <address>
+      <h2 id="contacto">Team Games-1b - integrantes</h2>
+      <br>
+      <h4>
+        <ul>
+          <li>Rodrigo <a title="Github" href="https://https://github.com/RodrigoAntunez" target="_blank"><i
+                class="fab fa-github"></i></a> <a title="Linkedin"
+              href="https://www.linkedin.com/in/rodrigoantunez1999/" " target=" _blank"><i
+                class="fab fa-linkedin-in"></i></a></li>
+          <br>
+          <!--agregar logo de github + linkedin C/enlaces-->
+          <li>Fernando <a title="Github" href="https://github.com/FerDR89" target="_blank"><i
+                class="fab fa-github"></i></a> <a title="Linkedin" href="https://www.linkedin.com/in/fernando-emmanuel-de-row-396482b0/
+    " target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+          <br>
+          <!--agregar logo de github + linkedin C/enlaces-->
+          <li>Martín <a title="Github" href="https://github.com/mgabotto" target="_blank"><i
+                class="fab fa-github"></i></a> <a title="Linkedin"
+              href="https://www.linkedin.com/in/martin-luis-gabotto-0916a3146/" target="_blank"><i
+                class="fab fa-linkedin-in"></i></a>
+          </li>
+          <br>
+          <!--agregar logo de github + linkedin C/enlaces-->
+          <li>Sebastián <a title="Github" href="https://github.com/Tusuegra510" target="_blank"><i
+                class="fab fa-github"></i></a> <a title="Linkedin"
+              href="https://www.linkedin.com/in/sebasti%C3%A1n-g%C3%B3mez-24b63313a/" target="_blank"> <i
+                class="fab fa-linkedin-in"></i></a></li>
+          <!--agregar logo de github + linkedin + Email C/enlaces-->
+        </ul>
+      </h4>
+    </address>
+
+  </footer>
+
+  <script src="./app.js"></script>
 </body>
 
 </html>

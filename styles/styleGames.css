@@ -81,7 +81,7 @@ h3 {
 
 .puntuacionTipo {
   align-content: left;
-  margin: 20px 100px 0px 100px;
+  margin: 20px 60px 0px 60px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -207,8 +207,8 @@ h3 {
   border: 0;
   cursor: pointer;
   position: absolute;
-  right: 1em;
-  top: 1em;
+  right: 2em;
+  top: 2em;
   z-index: 1000;
 }
 
@@ -260,4 +260,12 @@ h3 {
 }
 .hamburger::after {
   bottom: 6px;
+}
+
+
+@media only screen and (max-width: 1600px) {
+  .game {
+    flex-direction: column;
+    justify-content: center;
+  }
 }

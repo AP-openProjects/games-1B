@@ -34,15 +34,8 @@ body {
   /* Mis modificaciones al Body*/
 }
 
-header {
-  /* We want the header to have a static height, 
-   it will always take up just as much space as it needs.  */
-  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
-  flex: 0 0 auto;
-}
 
-.subtitle {
-}
+
 
 /*********** HEAD + TITLE *******************/
 
@@ -232,3 +225,10 @@ a {
 }
 
 /* ************************** */
+
+
+@media only screen and (max-width: 1600px) {
+  .game {
+    flex-direction: column;
+  }
+}

@@ -50,12 +50,8 @@ h1 {
 
 .puntuacion {
   width: 60rem;
-  /*
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    text-transform: uppercase;*/
+  display: block;
+
 }
 
 .puntuacion h3 {
@@ -82,7 +78,7 @@ h1 {
   bottom: 27px;
   left: 25%;
   height: 30px;
-  width: 300px;
+  width: 200px;
   /*    background-color: blueviolet;*/
   border-radius: 30px;
   border: black solid 2px;
